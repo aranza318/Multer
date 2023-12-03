@@ -1,6 +1,6 @@
-# Swagger
+# Multer
 
-Proyecto de backend entrega con swagger
+Proyecto de backend entrega con Multer
 
 El proyecto esta compuesto por las siguientes partes:
 Carpeta src, la cual a su vez reune dentro suyo a:
@@ -17,16 +17,20 @@ D. Junto a estas carpetas tambien encontraremos en dao a todos los managers para
 6. MidsIngreso, quien alberga a bcrypt.js(proteccion de informacion), github.js(acceso con esta plataforma), passAuth.js(autorizacion para ingreso) y passport.js(trabaja con passport).
 7. Carpeta Mocking quien concentra dentro suyo a todos los archivos necesesarios para poder realizar el mock de productos (mock.controller.js, mock.router.js y utils.mocking.js).
 8. Carpeta Mongo donde se encuentra el archivo de contacto de mongo.
-9. Public, la cual es otra gran carpeta que contiene a:
+9. Multer carpeta que contiene a un archivo omonimo el cual ejecuta los procesos para guardar los archivos subidos desde la pagina.
+10. Public, la cual es otra gran carpeta que contiene a:
 A. Carpeta css la cual contiene los estilos del proyecto.
 B. Carpeta images solo contiene el logo del cliente.
 C. Carpeta js, sostiene dentro de si a login.js y a restore js.
 D. Por ultimo y no en importacia tambien aqui encontraremos a los archivos: cart.js, chat.js, realTimeProducts.js, register.js  y user.js.
-10. Carpeta repository quien agrupa en su interior a los archivos contacts.repository.js e index.js.
-11. Routes, por aqui pasaran todas las rutas para unir a la app con las vistas a los diferentes sectores de la pagina.
-12. Services, quien aloja a todos los servicios que trabajaran con los controladores.
+11. Carpeta repository quien agrupa en su interior a los archivos contacts.repository.js e index.js.
+12. Routes, por aqui pasaran todas las rutas para unir a la app con las vistas a los diferentes sectores de la pagina.
+13. Services, quien aloja a todos los servicios que trabajaran con los controladores y al sector de errores.
+14. Carpeta test, maneja a los archivos de supertest para prueba de admin y de user.
 
-Carpeta view donde estan las vistas de la pagina, la cual contiene a layouts(donde encontraremos a main.handlebars) y tambien a las vistas de cart, products, product detail, login, register, restore, profile, chat y real time products
+Carpeta uploads, mirando dentro de ella encontraremos a los folders para documents, products y profiles quienes alojaran los datos subidos con multer.
+
+Carpeta view donde estan las vistas de la pagina, la cual contiene a layouts(donde encontraremos a main.handlebars) y tambien a las vistas de cart, premium, products, product detail, uploads, login, register, restore, profile, chat y real time products.
 
 Env., quien trabaja reservando las variables para dotenv.
 
